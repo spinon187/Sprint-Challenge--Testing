@@ -6,7 +6,8 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './games.sqlite3'
-    }
+    },
+    useNullAsDefault: true,
   },
   testing: {
     client: 'sqlite3',

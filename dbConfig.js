@@ -11,6 +11,6 @@ function getAll() {
     return db('games');
 }
 
-function add() {
-
+async function add(x) {
+    const [id] = await db('games').insert(x);
 }
